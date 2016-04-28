@@ -1,0 +1,115 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 100%;
+	font-family:  "Hiragino Sans GB W3";
+    color: #FFF;
+}
+.vote{
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+    background: #68cdd5;
+}
+.title{
+	width: 100%;
+	background: #22292c;
+	position: relative;
+}
+.return{
+	width: 12.9%;
+	font-size: 170%;
+	position: absolute;
+	top: 33%;
+	left: 2.5%;
+}
+.return img{
+	width: 20%;
+	max-width: 20px;
+}
+.return span{
+	width: 80%;
+	display: block;
+	position: absolute;
+	top: 4%;
+	left: 30%;
+}
+.title h1{
+	font-size: 200%;
+	font-weight: normal;
+	text-align: center;
+	padding: 4% 0;
+}
+.more{
+	width: 5.7%;
+	position: absolute;
+	top: 40%;
+	right: 2.5%;
+}
+.more img{
+	width: 100%;
+	max-width: 37px;
+}
+.main{
+	width: 100%;
+	position: relative;
+}
+.back{
+	width: 8.6%;
+	padding-top: 3.98%;
+	padding-left: 5.3%;
+}
+.logo{
+	width: 28%;
+	display: block;
+	margin-left: 33%;
+	padding-top: 8.58%;
+}
+.main p{
+	width: 69%;
+	font-size: 176%;
+	margin: 0 auto;
+	padding-top: 23%;
+
+}
+.content{
+	width: 100%;
+	padding-top: 7.5%;
+}
+.content p{
+	padding-top: 10%;
+	font-size: 150%;
+	text-align: left;
+}
+.contact{
+	width: 19.5%;
+	float: left;
+	padding-left: 21%;
+	padding-top: 12%;
+}
+.contact img{
+	width: 100%;
+	max-width: 86px;
+	padding-left: 20%;
+}
+.ptteng{
+	width: 19.5%;
+	float: right;
+	padding-right: 21%;
+	padding-top: 12%;
+}
+.ptteng img{
+	width: 100%;
+	max-width: 86px;
+	padding-left: 20%;
+}
+.block{
+	clear: both;
+	padding-bottom: 20%;
+}
+@media screen and (max-width:540px) {
+    .vote {
+        font-size:60%;
+    }
