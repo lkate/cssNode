@@ -1,0 +1,136 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-size: 62.5%;/*1em=10px*/
+    font-family:"Hiragino Sans GB W3","Hiragino Sans GB W6",Arial,sans-serif;
+	background: gray;
+
+}
+.wrap {
+	width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    color:#fff;
+    background:#29bde0;
+}
+      
+.header {
+    width:100%;
+    border-bottom:1px solid #74d4eb;
+    background:#29bde0;
+}
+.header h1{
+    font-family:"Hiragino Sans GB W6", sans-serif;
+    text-align:center;
+    font-size: 3.4em;
+    padding-top: 5.9735%;
+    padding-bottom: 1.25%;
+}
+.home {
+    width:7.96875%;
+    float: left;
+    padding-top:4.22%;
+    padding-left:3.125%;
+}
+.home img{
+	max-width: 51px;
+}
+.help {
+    width:6.5625%;
+    float: right;
+    padding-top:4.22%;
+    padding-right:3.125%;
+}
+.help img{
+	max-width: 40px;
+}  
+.result{
+	width: 74.5%;
+	margin:0 auto;
+}
+.result h1{
+	text-align: center;
+	margin: 0 auto;
+	padding-top:36.74%;
+	width: 100%;
+	background: url("images/result.png") no-repeat center 160%;
+	background-size: 73.58%;
+	font-size: 4.807em;
+}
+.result p{
+	font-size: 3.3em;
+    font-family:"Hiragino Sans GB W6", sans-serif;
+	color: #ffc865;
+    padding-top: 8.595%;
+    padding-bottom: 13.2%;
+}
+.explian{
+	width: 74%;
+	margin: 0 auto;
+	padding-bottom: 3.4%;
+}
+.explian p{
+	font-size: 2.6em;
+}
+.explian ul{
+	width: 100%;
+	float: left;
+}
+.explian li{
+	display: block;
+	width: 33%;
+	float: left;
+	font-size: 2.6em;
+}
+.content{
+	background: #fff;
+	border-bottom: 1px solid #dddddd;
+}
+.day{
+	width: 80%;
+	margin: 0 auto;
+	border-bottom: rgb(255,255,255);
+}
+.day h1{
+	font-size: 2em;
+	color:#975151;
+	padding-top: 13px;
+}
+.day span{
+	font-size: 2em;
+    color: #a6a6a6;
+    float: right;
+    margin: -4.91% 16% 0 0;
+}
+.day p{
+    font-size: 2.6em;
+    color:#a6a6a6;
+    padding: 2px 12.34%;
+    margin:  0 0 0 -12%;
+}
+.footer{
+    background:rgba(153,223,240,0.8);
+    position: fixed;
+    bottom: 0;
+    font-size: 4em;
+}
+.again{
+    background: #f66f6f;
+    float: left;
+    margin: 20px 25px;
+    border-radius: 10px;
+}
+.again p{
+    padding: 24px 55px;
+}
+.share{
+    background: #fbb435;
+    float: left;
+    margin:20px 25px;
+    border-radius: 10px;
+}
+.share p{
+    padding: 24px 35px;
+}
