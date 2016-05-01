@@ -1,0 +1,144 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul {
+    padding-top: 20.6349%;
+    margin-right: 3.968%;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding-bottom: 24.79%;
+    margin-left: -3.3%;
+    width: 123.97%;
+    background: url("images/game.png") no-repeat;
+}
+#a {
+    background-position: 0 0;
+    background-size: 20%;
+}
+#b {
+    background-position: -23.33% 0;
+    background-size: 20%;
+}
+#c {
+    background-position: -46.67% 0;
+    background-size: 20%;
+}
+#d {
+    background-position: -70% 0;
+    background-size: 20%;
+}
+body {
+    font-size: 62.5%;
+    font-family: "Hiragino Sans GB W3";
+    background: gray;
+}
+.wrap {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+.header {
+    background: #29bde0;
+    position: relative;
+}
+.header h1 {
+    font-size: 3.4em;
+    text-align: center;
+    color: #fff;
+    padding: 5.46875% 0 2.344% 0;
+}
+.menu {
+    width: 100%;
+    max-width: 6.9375%;
+    position: absolute;
+    top: 38.2%;
+    left: 3.75%;
+}
+.close {
+    width: 100%;
+    max-width: 5.625%;
+    position: absolute;
+    top: 42.7%;
+    right: 3.75%;
+}
+.tag {
+    width: 100%;
+    height: 12.8125%;
+    background: #b9e9f5;
+    font-size: 2.6em;
+    position: relative;
+}
+
+.tag p {
+    padding: 4.0625% 0;
+    text-indent: 1.8em;
+    color: #464646;
+}
+.tag img {
+    width: 100%;
+    max-width: 52px;
+    float: right;
+    margin-top: 2.34%;
+    margin-right: 2.656%;
+}
+.count{
+    width: 100%;
+    background: #29bde0;
+    padding: 4% 0 6.7% 0;
+}
+.count h2{
+    font-size: 2.4em;
+    text-indent: 11.25%;
+    color: #fff;
+}
+.main{
+    width: 100%;
+    padding-top: 6.8%;
+}
+.ident{
+    width: 20%;
+    float: left;
+    margin: 0 6% 3% 6%;
+    text-align: center;
+}
+.ident p {
+    color: #565656;
+    font-size: 3em;
+    padding: 27.7% 3.968% 23.8%;
+    background: #f5c97b;
+    border: 5px solid #fff;
+    border-bottom: none;
+}
+.ident span {
+    display: block;
+    color: #fff;
+    font-size: 2.276em;
+    padding: 1px 5px;
+    background: #83b09a;
+    border: 5px solid #fff;
+    border-top: none;
+}
+.clear {
+    clear: both;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;;
+    max-width: 640px;
+    background: #29bde0;
+}
+.end{
+    width: 72%;
+    background: #fbb435;
+    margin: 6% auto 8%;
+    font-size: 4em;
+    text-align: center;
+}
+.end p {
+    padding: 5.217% 0;
+    color: #fff;
+}
