@@ -1,0 +1,123 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body{
+	width: 100%;
+	max-width: 1920px;
+	font-size: 62.5%;
+	font-family: 'Microsoft YaHei';
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.wrap{
+	width: 100%;
+	max-width: 1920px;
+}
+.clear{
+	clear: both;
+}
+.header{
+	width: 100%;
+}
+.top{
+	width: 100%;
+	margin: 0 auto;
+}
+.top p{
+	font-size: 1.4em;
+	color: #29b078;
+	padding: 10px 0;
+	margin-left: 5%;
+}
+.top img{
+	float: right;
+	width: 1.7%;
+	padding-top: 7px;
+}
+.qq,.weibo {
+    padding-right: 16px;
+}
+.menu {
+    width: 100%;
+    background-color: #29b078;
+}
+.menu ul {
+    width: 62.5%;
+    margin: 0 auto;
+	list-style: none;
+}
+.menu li {
+    float: right;
+}
+.menu li a {
+    font-size: 1.602em;
+    display: inline-block;
+    padding: 39px 33px;
+}
+.menu li a:hover {
+    border-bottom: 4px solid #fff;
+}
+/*友情链接*/
+.link h2{
+	font-size: 2em;
+	text-align: center;
+	padding: 100px 0 30px;
+}
+.link ul li {
+    font-size: 1.4em;
+    float: left;
+    width: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    color: #b0b0b0;
+    list-style-type: disc;
+}
+/*footer*/
+.footer {
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    background-color: #29b078;
+}
+.information {
+    width: 62.5%;
+    margin: 0 auto;
+}
+.about,.pttenglink {
+    display: inline-block;
+    float: left;
+}
+.information p {
+    font-size: 1.6em;
+    padding-top: 37px;
+}
+.information span {
+    font-size: 1.4em;
+    display: inline-block;
+    padding-top: 68px;
+}
+.pttenglink {
+    width: 237px;
+    padding-left: 153px;
+}
+.pttenglink a {
+    float: left;
+    padding-top: 30px;
+    padding-right: 35px;
+}
+.erweima {
+    float: right;
+    padding-right: 30px;
+    text-align: center;
+}
+.bottom{
+	text-align: center;
+	font-size: 1.4em;
+	color: #fff;
+	border-top: 1px solid #fff;
+	background-color: #29b078;
+}
