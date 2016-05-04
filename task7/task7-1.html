@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>修真院</title>
+	<link rel="stylesheet" href="hf.css">
+	<link rel="stylesheet" href="task7-1.css">
+	<script type="text/javascript">
+		window.onload=function () {
+            var container = document.getElementById('container');
+            var list = document.getElementById('list');
+            var buttons = document.getElementById('buttons').getElementsByTagName('span');
+            var prev = document.getElementById('prev');
+            var next = document.getElementById('next');
+            var index = 1;
+            var len = 5;
+            var animated = false;
+            var interval = 3000;
+            var timer;
+
+
+            function animate (offset) {
+                if (offset == 0) {
+                    return;
+                }
+                animated = true;
+                var time = 300;
+                var inteval = 10;
+                var speed = offset/(time/inteval);
+                var left = parseInt(list.style.left) + offset;
+
+                var go = function (){
+                    if ( (speed > 0 && parseInt(list.style.left) < left) || (speed < 0 && parseInt(list.style.left) > left)) {
+                        list.style.left = parseInt(list.style.left) + speed + 'px';
+                        setTimeout(go, inteval);
+                    }
+                    else {
+                        list.style.left = left + 'px';
+                        if(left>-200){
+                            list.style.left = -1920 * len + 'px';
+                        }
+                        if(left<(-1920 * len)) {
+                            list.style.left = '-600px';
+                        }
+                        animated = false;
+                    }
+                }
+                go();
+            }
+
+            function showButton() {
+                for (var i = 0; i < buttons.length ; i++) {
+                    if( buttons[i].className == 'on'){
+                        buttons[i].className = '';
+                        break;
+                    }
+                }
+                buttons[index - 1].className = 'on';
+            }
+
+            function play() {
+                timer = setTimeout(function () {
+                    next.onclick();
+                    play();
+                }, interval);
+            }
+            function stop() {
+                clearTimeout(timer);
+            }
+
+            next.onclick = function () {
+                if (animated) {
+                    return;
+                }
+                if (index == 4) {
+                    index = 1;
+                }
+                else {
+                    index += 1;
+                }
+                animate(-1920);
+                showButton();
+            }
+            prev.onclick = function () {
+                if (animated) {
+                    return;
+                }
+                if (index == 1) {
+                    index = 4;
+                }
+                else {
+                    index -= 1;
+                }
+                animate(1920);
+                showButton();
+            }
+
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function () {
+                    if (animated) {
+                        return;
+                    }
+                    if(this.className == 'on') {
+                        return;
+                    }
+                    var myIndex = parseInt(this.getAttribute('index'));
+                    var offset = -1920 * (myIndex - index);
+
+                    animate(offset);
+                    index = myIndex;
+                    showButton();
+                }
+            }
+
+            container.onmouseover = stop;
+            container.onmouseout = play;
+
+            play();
+}
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<div class="top">
+				<img src="images/weixin-share-img.png" alt="weixin" class="weixin">
+				<img src="images/qq-share-img.png" alt="qq" class="qq">
+				<img src="images/weibo-share-img.png" alt="weibo" class="weibo">
+				<p>客服电话：010-9478634</p>
+			</div>
+			<div class="menu">
+				<ul>
+					<li>
+						<a href="" class="shou ye">首页</a>
+						<a href="">职业殿堂</a>
+						<a href="">我的学院</a>
+						<a href="">新人必读</a>
+						<a href="">关于我们</a>
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+            <div id="container">
+			    <div id="list" style="left: -1920px;">
+			        <img src="images/banner-4.jpg" alt="1"/>
+			        <img src="images/banner-1.jpg" alt="1"/>
+			        <img src="images/banner-2.jpg" alt="2"/>
+			        <img src="images/banner-3.jpg" alt="3"/>
+			        <img src="images/banner-4.jpg" alt="4"/>
+			        <img src="images/banner-1.jpg" alt="5"/>
+			    </div>
+			    <div id="buttons">
+			        <span index="1" class="on"></span>
+			        <span index="2"></span>
+			        <span index="3"></span>
+			        <span index="4"></span>
+			    </div>
+			    <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+			    <a href="javascript:;" id="next" class="arrow">&gt;</a>
+			</div>
+		</div>
+		<div class="main">
+            <div class="modal">
+                <div class="tips">
+                    <img class="rocket" src="images/rocket.png">
+                    <h2>搞笑</h2>
+                    <p>将五到七年的成长时间，缩短到一年到三年。</p>
+                </div>
+                <div class="tips">
+                    <img class="archive" src="images/archive.png">
+                    <h2>规范</h2>
+                    <p>标准的实战教程，不会走弯路</p>
+                </div>
+                <div class="tips">
+                    <img class="shape" src="images/shape.png">
+                    <h2>人脉</h2>
+                    <p>同班好友，同院学长，入学就混</p>
+                </div>
+                <div class="tips wuding">
+                    <img class="user1" src="images/user.png"><span>12400</span>
+                    <p>累计在线学习人数</p>
+                    <img class="user2" src="images/user.png"><span>12400</span>
+                    <p>学员已经找到满意工作</p>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <!-- 如何学习 -->
+            <div class="study">
+            	 <h2>如何学习</h2>
+            	 <div class="flow">
+            	 	<span>1</span>
+            	 	<p>匹配你现在的个人情况寻找适合自己的岗位</p>
+                    <img src="images/row.png">
+            	 </div>
+            	 <div class="flow">
+            	 	<span>2</span>
+            	 	<p>匹配你现在的个人情况寻找适合自己的岗位</p>
+                    <img src="images/row.png">
+            	 </div>
+            	 <div class="flow">
+            	 	<span>3</span>
+            	 	<p>匹配你现在的个人情况寻找适合自己的岗位</p>
+                    <img src="images/row.png">
+            	 </div>
+            	 <div class="flow">
+            	 	<span>4</span>
+            	 	<p>匹配你现在的个人情况寻找适合自己的岗位</p>
+            	 </div>
+            	 <div class="flow">
+            	 	<span>5</span>
+            	 	<p>匹配你现在的个人情况寻找适合自己的岗位</p>
+                    <img src="images/row.png">
+            	 </div>
+            	 <div class="flow">
+            	 	<span>6</span>
+            	 	<p>匹配你现在的个人情况寻找适合自己的岗位</p>
+                    <img src="images/row.png">
+            	 </div>
+            	 <div class="flow">
+            	 	<span>7</span>
+            	 	<p>匹配你现在的个人情况寻找适合自己的岗位</p>
+                    <img src="images/row.png">
+            	 </div>
+            	 <div class="flow">
+            	 	<span>8</span>
+            	 	<p>匹配你现在的个人情况寻找适合自己的岗位</p>
+            	 </div>
+                 <div class="clear"></div>
+            </div>
+             <div class="student">
+                <h2>优秀学员展示</h2>
+                <div class="name">
+                    <img src="images/avatar1.png">
+                    <h3>技术顾问：王超</h3>
+                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                </div>
+                <div class="name">
+                    <img src="images/avatar2.png">
+                    <h3>技术顾问：王朝</h3>
+                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                </div>
+                <div class="name">
+                    <img src="images/avatar3.png">
+                    <h3>技术顾问：罗大佑</h3>
+                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                </div>
+                <div class="name">
+                    <img src="images/avatar4.png">
+                    <h3>技术顾问：罗大佑</h3>
+                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                </div>
+                <div class="dot clear">
+	                <img src="images/dotgreen.png">
+	                <img src="images/dotwhite.png">
+	                <img src="images/dotwhite.png">
+	                <img src="images/dotwhite.png">
+                </div>
+            </div>
+            <div class="partner">
+                <h2>战略合作企业</h2>
+                <div class="company alibaba"></div>
+                <div class="company jinshan"></div>
+                <div class="company huanxin"></div>
+                <div class="company ronglian"></div>
+                <div class="company qiniuyun"></div>
+                <div class="clear"></div>
+            </div>
+            <div class="link">
+                <h2>友情链接</h2>
+                <ul>
+                    <li>手机软件</li>
+                    <li>教师招聘</li>
+                    <li>找工作</li>
+                    <li>教师招聘</li>
+                    <li>找工作</li>
+                    <li>手机软件</li>
+                    <li>教师招聘</li>
+                    <li>手机软件</li>
+                    <li>手机软件</li>
+                    <li>找工作</li>
+                    <li>手机软件</li>
+                    <li>教师招聘</li>
+                    <li>找工作</li>
+                    <li>教师招聘</li>
+                    <li>找工作</li>
+                    <li>手机软件</li>
+                    <li>教师招聘</li>
+                    <li>手机软件</li>
+                    <li>手机软件</li>
+                    <li>找工作</li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="information">
+                <div class="about">
+                    <p>技能树—改变你我</p>
+                    <span>关于我们 | 联系我们 | 友情链接</span>
+                </div>
+                <div class="pttenglink">
+                    <p>旗下网站</p>
+                    <a href="">草船云孵化器</a>
+                    <a href="">最强IT特训营</a>
+                    <a href="">葡萄藤轻游戏</a>
+                    <a href="">桌游精灵</a>
+                </div>
+                <div class="erweima">
+                    <p>微信公众平台</p>
+                    <img src="images/erweima.png">
+                </div>
+            </div>
+        </div>
+        <div class="bottom">Copyright © 2015 IT修真院 www.jnshu.com All Rights Reserved | 京ICP备13005880号
+        </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+#container { width: 1920px; 
+	margin: 0 auto;
+	height: 600px; 
+	border: 3px solid #333; 
+	overflow: hidden; 
+	position: relative;
+}
+#list { width: 11520px; 
+	height: 600px; 
+	position: absolute;
+	z-index: 1;
+}
+#list img { float: left;
+}
+ #buttons { position: absolute;
+	  height: 10px; 
+	  width: 100px; 
+	  z-index: 2; 
+	  left: 860px;
+	  top: 561px;
+}
+#buttons span { cursor: pointer;
+	float: left;
+	border: 1px solid #fff; 
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #333;
+	margin-right: 10px;
+  }
+#buttons .on {  background: orangered;
+}
+.arrow { cursor: pointer; 
+	display: none; 
+	line-height: 39px; 
+	text-align: center;
+	font-size: 36px; 
+	font-weight: bold; width: 40px;
+	top: 252px; 
+    position: absolute;
+	z-index: 2;
+	background-color: RGBA(0,0,0,.3);
+	color: #fff;
+}
+.arrow:hover { background-color: RGBA(0,0,0,.7);
+}
+#container:hover .arrow { display: block;
+}
+#prev { left: 100px;
+}
+#next { right: 100px;}
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+.modal{
+	width: 100%;
+	padding-top: 150px;
+}
+.tips{
+	float: left;
+	width: 20%;
+	padding: 0 2%;
+    text-align: center;
+}
+.tips p{
+	text-align: left;
+}
+.rocket{
+	margin: 0 auto;
+	padding: 1px 0 2px;
+}
+.archive{
+	 margin: 0 auto;
+	 padding: 13px 3px;
+}
+.shape{
+	margin: 0 auto;
+	padding: 12px;
+}
+.tips h2{
+	font-size: 1.8em;
+	padding: 32px 0;
+}
+.tips p{
+	font-size: 1.7em;
+	color: #b0b0b0;
+}
+.wuding {
+    text-align: left;
+    border-left: 1px dashed #dedede;
+    float: right;
+}
+.user1 {
+    padding-top: 64px;
+    padding-left: 55px;
+}
+.user2 {
+    padding-top: 32px;
+    padding-left: 57px;
+}
+.wuding p {
+    padding-top: 20px;
+    padding-left: 55px;
+}
+/*study*/
+.study{
+	width: 100%;
+}
+.study h2{
+	text-align: center;
+	font-size: 2em;
+	padding: 50px 0;
+}
+.flow {
+    display: inline-block;
+    float: left;
+    padding-bottom: 98px;
+    vertical-align: middle;
+    height: 70px;
+}
+.flow span {
+    font-size: 1.8em;
+    line-height: 70px;
+    display: inline-block;
+    float: left;
+    width: 70px;
+    height: 68px;
+    text-align: center;
+    color: #29b078;
+    border: 1px solid gray;
+    border-radius: 40px;
+}
+.flow p {
+    font-size: 1.4em;
+    display: inline-block;
+    width: 153px;
+    padding: 10px 10px 0 18px;
+    vertical-align: middle;
+    color: #b0b0b0;
+}
+.flow img{
+	vertical-align: middle;
+	padding-right: 20px;
+}
+
+/*学员*/
+.student h2{
+	font-size: 2em;
+	text-align: center;
+    padding: 25px 0 70px;
+}
+.name {
+    display: inline-block;
+    float: left;
+    width: 260px;
+    height: 369px;
+    margin-right: 40px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #a1a1a1;
+}
+.name img {
+    padding-top: 12px;
+}
+.name h3 {
+    font-size: 1.8em;
+    padding-top: 46px;
+}
+.name p {
+    width: 207px;
+    margin: 0 auto;
+    font-size: 1.6em;
+    padding-top: 27px;
+    color: #b0b0b0;
+    line-height: 1.6em;
+}
+.dot {
+    text-align: center;
+    padding-top: 25px;
+}
+.dot img {
+    margin: 2px;
+}
+.partner h2 {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 140px 0 70px;
+}
+.company {
+    float: left;
+    width: 237px;
+    height: 176px;
+}
+.company:hover {
+    box-shadow: 1px 1px 12px #666;
+}
+/*合作伙伴*/
+.alibaba {
+    background: url(images/alibaba.png) no-repeat center;
+}
+.jinshan {
+    background: url(images/jinshan.png) no-repeat center;
+}
+.huanxin {
+    background: url(images/huanxin.png) no-repeat center;
+}
+.ronglian {
+    background: url(images/ronglian.png) no-repeat center;
+}
+.qiniuyun {
+    background: url(images/qiniuyun.png) no-repeat center;
+}
+/*友情链接*/
+.link h2{
+	font-size: 2em;
+	text-align: center;
+	padding: 100px 0 30px;
+}
+.link ul li {
+    font-size: 1.4em;
+    float: left;
+    width: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    color: #b0b0b0;
+    list-style-type: disc;
+}
+/*footer*/
+.footer {
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    background-color: #29b078;
+}
+.information {
+    width: 62.5%;
+    margin: 0 auto;
+}
+.about,.pttenglink {
+    display: inline-block;
+    float: left;
+}
+.information p {
+    font-size: 1.6em;
+    padding-top: 37px;
+}
+.information span {
+    font-size: 1.4em;
+    display: inline-block;
+    padding-top: 68px;
+}
+.pttenglink {
+    width: 237px;
+    padding-left: 153px;
+}
+.pttenglink a {
+    float: left;
+    padding-top: 30px;
+    padding-right: 35px;
+}
+.erweima {
+    float: right;
+    padding-right: 30px;
+    text-align: center;
+}
+.bottom{
+	text-align: center;
+	font-size: 1.4em;
+	color: #fff;
+	border-top: 1px solid #fff;
+	background-color: #29b078;
+}

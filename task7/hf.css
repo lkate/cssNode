@@ -1,0 +1,63 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body{
+	width: 100%;
+	max-width: 1920px;
+	font-size: 62.5%;
+	font-family: 'Microsoft YaHei';
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.wrap{
+	width: 100%;
+	max-width: 1920px;
+}
+.clear{
+	clear: both;
+}
+.header{
+	width: 100%;
+}
+.top{
+	width: 100%;
+	margin: 0 auto;
+}
+.top p{
+	font-size: 1.4em;
+	color: #29b078;
+	padding: 10px 0;
+	margin-left: 5%;
+}
+.top img{
+	float: right;
+	width: 1.7%;
+	padding-top: 7px;
+}
+.qq,.weibo {
+    padding-right: 16px;
+}
+.menu {
+    width: 100%;
+    background-color: #29b078;
+}
+.menu ul {
+    width: 62.5%;
+    margin: 0 auto;
+	list-style: none;
+}
+.menu li {
+    float: right;
+}
+.menu li a {
+    font-size: 1.602em;
+    display: inline-block;
+    padding: 39px 33px;
+}
+.menu li a:hover {
+    border-bottom: 4px solid #fff;
+}
