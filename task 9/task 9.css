@@ -1,0 +1,115 @@
+.main{
+	width: 1200px;
+	margin: 0 auto;
+}
+.sub{
+	font-size: 1.7em;
+	padding: 30px 0;
+	border-bottom: 1px solid #d0d6d9;
+}
+.sub-home {
+    color: #000;
+}
+.sub-job {
+    color: #29b078;
+}
+.group ul {
+    font-size: 1.4em;
+    border-bottom: 1px solid #d0d6d9;
+}
+.group ul li{
+	float: left;
+	padding: 5px;
+	margin: 25px 25px 25px 0;
+}
+.group-all {
+    background: #29b078;
+}
+.direction {
+    margin-right: 87px;
+    color: #999;
+}
+/*card*/
+.card{
+	width: 380px;
+	border: 2px solid #d0d6d9;
+	float: left;
+	border-radius: 10px;
+	margin: 50px 10px 0 0;
+}
+.card:hover {
+    box-shadow: 1px 1px 20px #666;
+}
+.allcard h2{
+	font-size: 1.6em;
+	padding: 30px 2px 30px 0;
+	border-bottom: 1px solid #d0d6d9;
+}
+.cardtop img{
+	float: left;
+	margin: 20px 10px 15px 10px;
+}
+.allcard h3{
+	font-size: 1.6em;
+	padding: 32px 0 18px 0;
+}
+.cardtop p {
+    font-size: 1.4em;
+}
+.cardmiddle ul {
+    width: 100%;
+}
+.cardmiddle li{
+	display: inline-block;
+	float: left;
+	padding: 12px 0 12px 12px;
+	width: 177px;
+	border-bottom: 1px solid #d0d6d9;
+}
+.li-on,.li-tw,.li-th,.li-fo{
+	border-right: 1px solid #d0d6d9;
+}
+.li-on,.li-tw{
+	border-top: 1px solid #d0d6d9;
+}
+.cardmiddle ul li img {
+    padding-left: 10px;
+}
+.cardmiddle span {
+    color: red;
+    padding-left: 14px;
+}
+.cardfoot p{
+	display: inline-block;;
+	padding: 50px;
+	border-bottom: 1px solid #d0d6d9;
+    border-right: 1px solid #d0d6d9;
+}
+.cardfoot ul {
+    width: 230px;
+    height: 107px;
+    float: right;
+}
+.cardfoot li {
+    padding-top: 10px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #d0d6d9;
+}
+.card-f-l {
+    float: left;
+    padding-left: 24px;
+}
+.card-f-r {
+    float: right;
+    padding-right: 10px;
+}
+.cardbottom h4{
+	border-bottom: 1px solid #d0d6d9;
+	padding: 10px 0 10px 10px;
+}
+.cardbottom span {
+    color: red;
+}
+.cardbottom p{
+	padding: 10px 0 10px 10px;
+}
