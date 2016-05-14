@@ -1,0 +1,85 @@
+.tel{ color:#29b078;
+	  margin:0;
+	  height:33px;
+	  line-height:33px;
+}
+.social{ display:inline-block;
+		 width:30px;
+		 height:30px;
+	     margin-right:1em; 
+	 }
+#weixin{ background:url(images/weixin-share-img.png) no-repeat ;}
+#qq{ background:url(images/qq-share-img.png) no-repeat ;}
+#weibo{ background:url(images/weibo-share-img.png) no-repeat ;}
+.navbar-default{ background-color:#29b078; }
+.navbar-brand{ height:auto;}
+.navbar{ margin:0; }
+.navbar-nav>li>a{ color:white !important;
+		   text-align:center;
+		   padding:35px;
+		   font-size:1.15em;
+}
+.navbar-nav>li>a:hover, .current{ border-bottom:4px solid white; }
+footer>.container a{ color:white;}
+.addpadding-sp{ padding:2rem 0; }
+.addpadding-sp p{
+	font-size: 1.8em;
+	padding-bottom: 30px;
+}
+.addpadding-sp a{
+	color: white;
+}
+.addpadding-sp>span{ font-size:1.3em; }
+.footer {
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    background-color: #29b078;
+}
+.bottom{
+	text-align: center;
+	font-size: 1em;
+	color: #fff;
+	border-top: 1px solid #fff;
+	background-color: #29b078;
+}
+.textgreen{ color:#29b078;}
+#cooperative{
+	position: relative;
+	z-index: 1000;
+	border: 1px solid #f8c157;
+	padding-bottom:3em;
+}
+.addborder{
+	border-bottom: 1px solid #e6e6e6;
+	padding: 1em 0;
+}
+.coop{
+	display: inline-block;
+	color: #29b078;
+	text-align: left;
+}
+.coop>span{
+    display: inline-block;
+    padding: 0.5em;
+    border: 1px solid #f8c157;
+    border-radius:50%;
+}
+.coop:hover{ 
+	background:transparent
+}
+.coop:hover span,
+.coop:active span,
+.li-center li:nth-child(3) span{ 
+	background:#f8c157;
+}
+.li-center{
+	padding-left: 20%;
+}
+.addmargin-p{
+	text-indent: 2em;
+	margin: 2em 0;
+}
+.addmargin-p:last-child{
+	padding-bottom: 3em;
+}
